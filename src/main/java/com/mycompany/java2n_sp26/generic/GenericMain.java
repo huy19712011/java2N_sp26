@@ -59,7 +59,19 @@ public class GenericMain {
         Utils.printStudent(goodStudent);
 
         // - working with list
-        
+
+        // - ok
+        var students = new CGenericList<Student>();
+        Utils.printStudentList(students);
+
+        // - not ok
+        //var goodStudents = new CGenericList<GoodStudent>();
+        //Utils.printStudentList(goodStudents);
+
+         //7. after adding wildcard => works!
+        var goodStudents = new CGenericList<GoodStudent>();
+        Utils.printStudentList(goodStudents);
+
 
     }
 
