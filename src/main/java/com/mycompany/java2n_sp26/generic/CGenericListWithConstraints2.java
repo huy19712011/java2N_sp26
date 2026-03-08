@@ -2,7 +2,7 @@ package com.mycompany.java2n_sp26.generic;
 
 public class CGenericListWithConstraints2<T extends Comparable> {
 
-    private T[] items = (T[]) new Object[10];
+    private T[] items = (T[]) new Comparable[10];
 
     private int count;
 

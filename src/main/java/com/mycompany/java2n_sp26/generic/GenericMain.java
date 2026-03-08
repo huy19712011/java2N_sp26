@@ -23,11 +23,22 @@ public class GenericMain {
         System.out.println(list2.get(0)); // print 1
         System.out.println(list2.get(1)); // print 2.2
 
-        //2. with constraints2
+        //22. with constraints2
 //        CGenericListWithConstraints2<Integer> list22 = new CGenericListWithConstraints2<>(); // Integer
 //        CGenericListWithConstraints2<Float> list22 = new CGenericListWithConstraints2<>(); // Float
         CGenericListWithConstraints2<String> list22 = new CGenericListWithConstraints2<>(); // String
 //        CGenericListWithConstraints2<Student> list22 = new CGenericListWithConstraints2<>(); // Student => error, not Comparable
+
+        //3.
+        Student student1 = new Student(10);
+        Student student2 = new Student(20);
+
+        if (student1.compareTo(student2) < 0)
+            System.out.println("student1 < student2");
+        else if (student1.compareTo(student2) == 0)
+            System.out.println("student 1 = student 2");
+        else
+            System.out.println("student 1 > student 2");
     }
 
 }
