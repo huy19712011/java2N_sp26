@@ -27,4 +27,10 @@ public class Student implements Comparable<Student>{
         return points - other.points;
     }
 
+    @Override
+    public String toString() {
+        return "Student{" + "points=" + points + '}';
+    }
+
+
 }

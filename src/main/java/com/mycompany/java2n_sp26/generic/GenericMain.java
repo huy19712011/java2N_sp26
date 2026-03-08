@@ -33,12 +33,21 @@ public class GenericMain {
         Student student1 = new Student(10);
         Student student2 = new Student(20);
 
-        if (student1.compareTo(student2) < 0)
+        if (student1.compareTo(student2) < 0) {
             System.out.println("student1 < student2");
-        else if (student1.compareTo(student2) == 0)
+        } else if (student1.compareTo(student2) == 0) {
             System.out.println("student 1 = student 2");
-        else
+        } else {
             System.out.println("student 1 > student 2");
+        }
+
+        // 4. Generic methods
+        var max = Utils.max(1, 3);
+        System.out.println(max);
+
+        Student maxStudent = Utils.max(student1, student2);
+        System.out.println(maxStudent);
+
     }
 
 }
