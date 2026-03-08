@@ -48,6 +48,11 @@ public class GenericMain {
         Student maxStudent = Utils.max(student1, student2);
         System.out.println(maxStudent);
 
+        // 5. Multiple type parameters
+        Utils.print(1, "value 1");
+
+        System.out.println(new KeyValuePair("key 1", "value1"));
+
     }
 
 }
