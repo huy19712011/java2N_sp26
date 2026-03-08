@@ -11,4 +11,9 @@ public class Utils {
 
         System.out.println(key + ":" + value);
     }
+
+    public static void printStudent(Student student) {
+
+        System.out.println(student);
+    }
 }

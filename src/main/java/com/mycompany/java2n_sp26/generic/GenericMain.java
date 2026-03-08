@@ -53,6 +53,14 @@ public class GenericMain {
 
         System.out.println(new KeyValuePair("key 1", "value1"));
 
+        // 6. Classes and inheritance
+        // - working with single instance: Oki
+        Student goodStudent = new GoodStudent(10);
+        Utils.printStudent(goodStudent);
+
+        // - working with list
+        
+
     }
 
 }
