@@ -1,5 +1,6 @@
 package com.mycompany.java2n_sp26.jdbc;
 
+import java.lang.System.Logger;
 import java.sql.Connection;
 import java.sql.SQLException;
 
@@ -9,21 +10,13 @@ public class JdbcMain {
 
         DatabaseConnectionManager dcm = new DatabaseConnectionManager("java2N_sp26", "sa", "123456");
 
-        Connection connection = null;
+        try (Connection connection = dcm.getConnection()) {
 
-        try {
-            connection = dcm.getConnection();
             System.out.println("Connected...");
-        } catch (Exception e) {
+
+        } catch (SQLException e) {
+            System.out.println("Failed to connect to database");
             e.printStackTrace();
-        } finally {
-            if (connection != null) {
-                try {
-                    connection.close();
-                } catch (SQLException ex) {
-                    ex.printStackTrace();
-                }
-            }
         }
     }
 
