@@ -40,7 +40,7 @@ public class SetDemo {
 
         // 2.3 Difference
         set1.removeAll(set2);
-        System.out.println(set1);
+        System.out.println(set1); //a
 
 
     }

@@ -8,7 +8,9 @@ public class CollectionMain {
 
         // ListDemo.show();
 
-        SetDemo.show();
+        // SetDemo.show();
+
+        MapDemo.show();
     }
 
 }
